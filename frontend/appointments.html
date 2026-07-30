@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Appointments | Hospital Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-logo">HMS</span>
+        <div>
+          <h1>Hospital System</h1>
+          <p>Healthcare dashboard</p>
+        </div>
+      </div>
+      <nav class="nav-menu">
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="patients.html" class="nav-link">Patients</a>
+        <a href="doctors.html" class="nav-link">Doctors</a>
+        <a href="appointments.html" class="nav-link active">Appointments</a>
+        <a href="departments.html" class="nav-link">Departments</a>
+        <a href="laboratory.html" class="nav-link">Laboratory</a>
+        <a href="pharmacy.html" class="nav-link">Pharmacy</a>
+        <a href="billing.html" class="nav-link">Billing</a>
+        <a href="reports.html" class="nav-link">Reports</a>
+        <a href="settings.html" class="nav-link">Settings</a>
+      </nav>
+      <div class="sidebar-footer">
+        <a href="login.html" class="button button-secondary">Sign In</a>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <h2>Appointments</h2>
+          <p>Track scheduled visits and appointment confirmations.</p>
+        </div>
+        <div class="topbar-actions">
+          <button id="themeToggle" class="icon-button">Toggle theme</button>
+          <input id="searchInput" type="search" placeholder="Search appointment, doctor, or patient..." />
+        </div>
+      </header>
+
+      <section class="overview-panel">
+        <div class="panel-header">
+          <h3>Upcoming appointments</h3>
+          <small>Next 24 hours</small>
+        </div>
+        <div class="table-wrapper">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Patient</th>
+                <th>Doctor</th>
+                <th>Department</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>09:15</td>
+                <td>Sarah Johnson</td>
+                <td>Dr. Chen</td>
+                <td>Cardiology</td>
+                <td>Confirmed</td>
+              </tr>
+              <tr>
+                <td>10:30</td>
+                <td>Michael Davis</td>
+                <td>Dr. Lee</td>
+                <td>Orthopedics</td>
+                <td>Checked in</td>
+              </tr>
+              <tr>
+                <td>11:00</td>
+                <td>Olivia Parker</td>
+                <td>Dr. Patel</td>
+                <td>Neurology</td>
+                <td>Pre-visit</td>
+              </tr>
+              <tr>
+                <td>13:45</td>
+                <td>Benjamin Scott</td>
+                <td>Dr. Robinson</td>
+                <td>Oncology</td>
+                <td>Rescheduled</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="stats-grid">
+        <article class="stat-card">
+          <span class="stat-title">Total today</span>
+          <strong>86</strong>
+        </article>
+        <article class="stat-card">
+          <span class="stat-title">Confirmed</span>
+          <strong>72</strong>
+        </article>
+        <article class="stat-card">
+          <span class="stat-title">Pending</span>
+          <strong>10</strong>
+        </article>
+        <article class="stat-card">
+          <span class="stat-title">Cancelled</span>
+          <strong>4</strong>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

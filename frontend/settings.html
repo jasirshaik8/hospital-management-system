@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Settings | Hospital Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-logo">HMS</span>
+        <div>
+          <h1>Hospital System</h1>
+          <p>Healthcare dashboard</p>
+        </div>
+      </div>
+      <nav class="nav-menu">
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="patients.html" class="nav-link">Patients</a>
+        <a href="doctors.html" class="nav-link">Doctors</a>
+        <a href="appointments.html" class="nav-link">Appointments</a>
+        <a href="departments.html" class="nav-link">Departments</a>
+        <a href="laboratory.html" class="nav-link">Laboratory</a>
+        <a href="pharmacy.html" class="nav-link">Pharmacy</a>
+        <a href="billing.html" class="nav-link">Billing</a>
+        <a href="reports.html" class="nav-link">Reports</a>
+        <a href="settings.html" class="nav-link active">Settings</a>
+      </nav>
+      <div class="sidebar-footer">
+        <a href="login.html" class="button button-secondary">Sign In</a>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <h2>Settings</h2>
+          <p>Configure system preferences and user access.</p>
+        </div>
+        <div class="topbar-actions">
+          <button id="themeToggle" class="icon-button">Toggle theme</button>
+          <input id="searchInput" type="search" placeholder="Search settings or preferences..." />
+        </div>
+      </header>
+
+      <section class="overview-panel">
+        <div class="panel-header">
+          <h3>System settings</h3>
+          <small>General configuration</small>
+        </div>
+        <div class="settings-grid">
+          <div class="setting-card">
+            <h4>Account</h4>
+            <p>Manage your profile, password, and sign-in security.</p>
+          </div>
+          <div class="setting-card">
+            <h4>Notifications</h4>
+            <p>Configure alerts for appointments, tests, and billing events.</p>
+          </div>
+          <div class="setting-card">
+            <h4>Access control</h4>
+            <p>Adjust user roles, permissions, and team access.</p>
+          </div>
+          <div class="setting-card">
+            <h4>Integrations</h4>
+            <p>Connect with lab systems, insurance providers, and analytics.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats-grid">
+        <article class="stat-card">
+          <span class="stat-title">Active users</span>
+          <strong>342</strong>
+        </article>
+        <article class="stat-card">
+          <span class="stat-title">API integrations</span>
+          <strong>12</strong>
+        </article>
+        <article class="stat-card">
+          <span class="stat-title">Security alerts</span>
+          <strong>3</strong>
+        </article>
+        <article class="stat-card">
+          <span class="stat-title">Updates pending</span>
+          <strong>1</strong>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

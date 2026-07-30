@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reports | Hospital Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-logo">HMS</span>
+        <div>
+          <h1>Hospital System</h1>
+          <p>Healthcare dashboard</p>
+        </div>
+      </div>
+      <nav class="nav-menu">
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="patients.html" class="nav-link">Patients</a>
+        <a href="doctors.html" class="nav-link">Doctors</a>
+        <a href="appointments.html" class="nav-link">Appointments</a>
+        <a href="departments.html" class="nav-link">Departments</a>
+        <a href="laboratory.html" class="nav-link">Laboratory</a>
+        <a href="pharmacy.html" class="nav-link">Pharmacy</a>
+        <a href="billing.html" class="nav-link">Billing</a>
+        <a href="reports.html" class="nav-link active">Reports</a>
+        <a href="settings.html" class="nav-link">Settings</a>
+      </nav>
+      <div class="sidebar-footer">
+        <a href="login.html" class="button button-secondary">Sign In</a>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <h2>Reports</h2>
+          <p>Review hospital performance metrics and operational trends.</p>
+        </div>
+        <div class="topbar-actions">
+          <button id="themeToggle" class="icon-button">Toggle theme</button>
+          <input id="searchInput" type="search" placeholder="Search report type or timeframe..." />
+        </div>
+      </header>
+
+      <section class="overview-panel">
+        <div class="panel-header">
+          <h3>Report summary</h3>
+          <small>Key insights</small>
+        </div>
+        <div class="quick-actions">
+          <a href="#" class="action-card">Daily operations</a>
+          <a href="#" class="action-card">Financial summary</a>
+          <a href="#" class="action-card">Patient outcomes</a>
+          <a href="#" class="action-card">Staff efficiency</a>
+        </div>
+      </section>
+
+      <section class="overview-section">
+        <div class="overview-panel">
+          <div class="panel-header">
+            <h3>Operational metrics</h3>
+            <small>Last 7 days</small>
+          </div>
+          <ul class="notification-list">
+            <li>Average patient wait time decreased by 12%.</li>
+            <li>Admission volume increased by 8% week-over-week.</li>
+            <li>ER throughput improved by 10% after process updates.</li>
+          </ul>
+        </div>
+        <div class="overview-panel summary-panel">
+          <div class="panel-header">
+            <h3>Financial snapshot</h3>
+            <small>Monthly</small>
+          </div>
+          <div class="quick-actions">
+            <div class="action-card">Revenue growth 5%</div>
+            <div class="action-card">Cost per case $1,240</div>
+            <div class="action-card">Claim approval 92%</div>
+            <div class="action-card">Net margin 14%</div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
